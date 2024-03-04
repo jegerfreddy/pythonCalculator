@@ -1,3 +1,4 @@
+import math
 from math import sqrt
 
 
@@ -52,5 +53,40 @@ def sec_deg_formula():
         x2: float = (-b + sqrt(discriminant)) / (2*a)
 
         print(f"\nx1 = {x1} \nx2 = {x2}")
+
+        break
+
+
+def area_of_rectangle():
+    while True:
+        length: float = float(input("Definer lengden L: "))
+        width: float = float(input("Definer bredden B: "))
+
+        print(f"\nArealet til et rektangel med verdiene:\n"
+              f"L = {length}\n"
+              f"B = {width}\n\n"
+              f"Areal = {length * width}\n")
+
+        break
+
+
+def area_of_square():
+    while True:
+        side: float = float(input("Definer en side S: "))
+
+        print(f"\nArealet til et kvadrat med verdien:\n"
+              f"S = {side}\n\n"
+              f"Areal = {side * side}\n")
+
+        break
+
+
+def area_of_circle():
+    while True:
+        radius: float = float(input("Definer radius r: "))
+
+        print(f"\nArealet til et rektangel med verdiene:\n"
+              f"r = {radius}\n\n"
+              f"Areal = {math.pi * radius**2}\n")
 
         break
